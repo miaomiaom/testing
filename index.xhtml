@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Home</title>
+        
+        <style>
+            .Bimage{
+            background-image: url("");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            }
+        </style>
+    </h:head>
+    <h:body styleClass="Bimage">
+        <h:graphicImage value="" ></h:graphicImage>
+        <h:form>
+            <h:inputText id="Txt1" value="#{user.name}"/>
+            <h:commandButton id="button4" value="Submit" action="sign"/>
+            <p></p> &nbsp; <p></p> &nbsp; <p></p> &nbsp; <p></p> &nbsp; &nbsp;
+            <center>
+                <p>Welcome to Github</p>
+            <h:commandButton id="button1" 
+                             value="Office Email address" 
+                             action="open"
+                             style="width:150px;height:100px">
+            </h:commandButton>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+            <h:commandButton id="button2"
+                             value="InterCall Number"
+                             action="openiC"
+                             style="width:150px;height:100px">
+            </h:commandButton>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h:commandButton id="button3"
+                             value="Local PC ip address"
+                             action="openlPC"
+                             style="width:150px;height:100px">
+            </h:commandButton>
+            </center>
+        </h:form>
+    </h:body>
+</html>
